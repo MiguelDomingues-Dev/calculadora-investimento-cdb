@@ -27,7 +27,6 @@ document.querySelector("#calcular").addEventListener('click', function () {
 
     const totalSemAporte = montanteSemPorte - porteMensal;
 
-
     //Calculando o montante
     const montanteCdi = porteMensal * (((1 + taxaMensal) ** meses - 1) / taxaMensal) * (1 + taxaMensal);
     
@@ -42,4 +41,4 @@ document.querySelector("#calcular").addEventListener('click', function () {
 
     ganhoSemAporteTotal.innerHTML = totalSemAporte.toFixed(2);
     ganhoComAporteTotal.innerHTML = totalComAporte.toFixed(2);
-})
+});
